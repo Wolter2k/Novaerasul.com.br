@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="Assets\Icon\favicon_3.ico">
+	<title>Sobre Nós</title>
+  <style>
+      /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+	
+	/* Estilos do Barra de Navegação */ 
+    .navbar {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      z-index: 9999;
+      margin-right: 40px;
+	 /*background-color: #191970;*/  /*Cor solida*/
+	  background-image: linear-gradient(to bottom, rgba(25, 25, 112, 1), rgba(237, 237, 239, 0)); /*Cor Degrade*/
+    }
+      
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin-right: 30px;
+    }
+      
+    .logo_navbar {
+      width: 90px; 
+      height: 55px; /* se for logo com o nome abaixo do logo 90px se não 55px*/
+      margin-left: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin-right: 10px;
+	  margin-right: 20px;
+    }
+
+    .navbar li:last-child {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+	
+	.navbar a:hover {
+      color: #ff8c00; /* cor amarelada na seleção do item na barra de navegação*/
+    }
+	
+ 	/* Estilos do Container */    
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	  
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container img.logo {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .subcontainer img {
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      float: left;
+    }
+  
+    .container p {
+      text-align: justify;
+      text-indent: 20px;
+    }
+  
+    .container-1 {
+      margin-top: 90px;
+      text-align: justify;
+      font-size: 14px;
+    }
+
+    .container-2 {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .subcontainer-1-3-5 {
+      display: flex;
+      flex-basis: 18px;
+      justify-content: center;
+      margin-bottom: 20px;
+      align-items: center;
+      font-size: 14px;
+    }
+   
+   .subcontainer-2-4-6 {
+      display: flex;
+      flex-basis: 240px;
+      justify-content: center;
+      margin-bottom: 20px;
+      align-items: center;
+      
+    }
+    
+    .subcontainer-7-8-9 {
+      margin: 20px auto;
+      display: flex;
+      flex-basis: calc(33.33% - 20px);
+      justify-content: center;
+      margin-bottom: 30px;
+      align-items: center;
+      font-size: 14px;
+    }
+   
+    .subcontainer-7-8-9 p {
+      text-align: justify;
+      text-indent: 20px;
+    }
+    
+    .container-3 {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .subcontainer-atuacao-cabecalho {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: auto;
+	  width: 900px;
+    }
+
+    .subcontainer-atuacao-descricao {
+	 display: flex;
+	 flex-wrap: wrap;
+     justify-content: center;
+     margin-bottom: 20px;
+     width: 900px;
+     font-size: 14px;
+    }
+
+    .subcontainer-atuacao-descricao .column {
+     flex-basis: calc(50% - 20px);
+     margin-bottom: 20px;
+    }
+	
+	.subcontainer_mapa_atuacao {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	.subcontainer_mapa_atuacao img {
+      margin-right: 0px;
+      width: 420px;
+      height: 450px;
+      float: left;
+    }
+
+    .subcontainer-atuacao-descricao h2 {
+      text-align: center;
+    }
+	
+    .container-4 {
+      margin-top: 20px;
+	    margin-bottom: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .subcontainer-localizacao-cabecalho {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: auto;
+	    width: 900px;
+    }
+
+	.subcontainer-localizacao-descricao {
+	   display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: auto;
+     width: 900px;
+     font-size: 14px;
+	}
+	
+	.subcontainer-localizacao-descricao .column {
+	 flex-basis: 50%;
+	 margin-bottom: -10px;
+	}
+
+	.subcontainer-localizacao-descricao h2 {
+	 text-align: center;
+	}
+	
+	.column {
+	 flex-basis: 50%;
+     margin-bottom: 10px;
+	}
+
+	.column-text {
+	 flex-basis: calc(50% - 20px);
+	 margin-bottom: 10px;
+	}
+
+	.Mapa_Google_Maps {
+     float: left;
+     margin-right: 10px;
+	}
+	
+	.column-map {
+	flex-basis: 100%;
+	margin-bottom: 10px;
+	flex-grow: 1;
+	}
+
+ 
+	/* Estilos do Nota de Roda Pé */ 
+    .footer {
+      text-align: center;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+	
+	/* Estilos do ìcone de voltar ao Topo */ 
+	#voltarTopo {
+	 position: fixed;
+	 bottom: 20px;
+	 right: 20px;
+	 width: 40px;
+	 height: 40px;
+	 border-radius: 50%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 color: #fff;
+	 text-decoration: none;
+	 z-index: 9999;
+    }
+
+    #voltarTopo img {
+     width: 40px;
+     height: 40px;
+    }
+	
+  </style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html"><img src="Assets\Logo\logo_empresa_2.png"class="logo_navbar"></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Produtos.html">Produtos</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/Novaerasuldistribuidora/" target="_blank"><img src="Assets\Icon\bar_icons_facebook_.png"></a>
+				<a href="https://www.instagram.com/novaerasul/" target="_blank"><img src="Assets\Icon\bar_icons_instagram_.png"></a>
+			</div>
+		</ul>
+	</div>
+  
+	<main>
+		<div class="container container-1">
+			<h2>Quem Somos</h2>
+			<img src="Assets\Logo\logo_empresa.png" alt="Logo da Empresa" class="logo">
+			<p>Empresa que atua com exclusividade em distribuição de alimentos no cone sul do Rio Grande do Sul. Está presente no mercado desde 2015, e destaca-se por estar sempre em busca de atingir seus objetivos comerciais.</p>
+		</div>
+
+		<div class="container container-2">
+			<div class="subcontainer subcontainer-1-3-5">
+				<img src="Assets\Icon\about_mission_icon_4.png" alt="Imagem de Missão">
+			</div>
+			<div class="subcontainer subcontainer-2-4-6">
+				<h2>Missão</h2>
+			</div>
+			<div class="subcontainer subcontainer-1-3-5">
+				<img src="Assets\Icon\about_values_icon_4.png" alt="Imagem de Visão">
+			</div>
+			<div class="subcontainer subcontainer-2-4-6">
+				<h2>Valores</h2>
+			</div>
+			<div class="subcontainer subcontainer-1-3-5">
+				<img src="Assets\Icon\about_vision_icon_4.png" alt="Imagem de Valores">
+			</div>
+			<div class="subcontainer subcontainer-2-4-6">
+				<h2>Visão</h2>
+			</div>
+			<div class="subcontainer subcontainer-7-8-9">
+				<p>Atender as demandas do fornecedor, cumprir com as obrigações comerciais na cadeia de abastecimento com rentabilidade para a empresa. </p>
+			</div>
+			<div class="subcontainer subcontainer-7-8-9">
+				<p>Ser referência em distribuição.</p>
+			</div>
+			<div class="subcontainer subcontainer-7-8-9">
+				<p>Cumprir as obrigações sociais, econômicas e mercadológicas, com honestidade e profissionalismo em nossas relações. </p>
+			</div>
+		</div>
+
+		<div class="container container-3">
+			<div class="subcontainer subcontainer-atuacao-cabecalho">
+				<h2>Area de Atuação</h2>
+			</div>
+			<div class="subcontainer subcontainer-atuacao-descricao">
+				<div class="column">
+					<h2>Cidades Atendidas</h2>
+					<p>A Novaera Sul atende neste momento 48 cidades que fazem 
+						parte da região sul do estado. A relação de cidades atendidas está separado de 
+						acordo com o codigo DDD de cada região:</p>
+					<p><b>Área 51:</b>	Amaral Ferrador, Arambare, Cachoeira do Sul, Camaquã, Cerro Grande do Sul, Chuvisca, 
+						Cristal, Dom Feliciano, Encruzilhada do Sul, Sentinela do Sul e Tapes.</p>
+					<p><b>Área 53:</b> Aceguá, Arroio do Padre, Arroio Grande, Bagé, Candiota, Canguçu, Capão do Leão, Cerrito, 
+						Chuí, Dom Pedrito, Herval, Hulha Negra, Jaguarão, Morro Redondo, Pedro Osório, 
+						Pelotas, Pinheiro Machado, Piratini, Rio Grande, Santa Vitória do Palmar, Santana
+						da Boa Vista, São Jose do Norte, São Lourenço do Sul, Turuçu.</p>
+					<p><b>Área 55:</b> Alegrete, Barra do Quarai, Caçapava do Sul, Formigueiro, Lavras do Sul, Quarai, Rosário do Sul,
+						Santa Margarida do Sul, Santa Maria, Santana do Livramento, São Gabriel, São Sepé, 
+						Vila Nova do Sul, Uruguaiana.</p>
+				</div>
+				<div class="column">
+					<div class="subcontainer_mapa_atuacao">
+						<img src="Assets\Map\mapa_atuacao_1.png" alt="Mapa de Atuação">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container container-4">
+			<div class="subcontainer subcontainer-localizacao-cabecalho">
+				<h2>Onde Estamos</h2>
+			</div>
+			<div class="subcontainer subcontainer-localizacao-descricao">
+				<div class="column column-text">
+					<p><b>Endereço:</b> <a href="https://www.google.com.br/maps/dir//-31.7017933,-52.3400934/@-31.7019289,-52.3403735,19.54z/data=!4m2!4m1!3e9?entry=ttu" target="_blank">Avenida Fernando Osório, 5573</a></p>
+					<p><b>Complemento:</b> A</p>
+					<p><b>Bairro:</b> Três vendas</p>
+					<p><b>Telefone:</b> <a href="tel:05332831508">(53) 2128-8900</a></p>
+          <p><b>Whatsapp:</b> <a href="https://wa.me/555321288900" target="_blank">(53) 2128-8900</a></p>
+					<p><b>Cep:</b> 96070-741</p>
+					<p><b>Cidade:</b> Pelotas/RS</p>
+					<p><b>E-mail:</b> <a href=""><a href="mailto:contato@novaerasul.com.br">contato@novaerasul.com.br</a></p>
+				</div>
+				<div class="column column-map">
+					<div class="Mapa_Google_Maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!4v1678710169105!6m8!1m7!1sH22IFOn9t2MStoQ22Lou4g!2m2!1d-31.70197730622052!2d-52.34003597018395!3f289.1789795874929!4f-5.9388352088693495!5f0.7820865974627469" width="450" height="450"></iframe>
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!4v1689692399108!6m8!1m7!1snSanuqe712XwWpsIyVvohg!2m2!1d-31.70968666529538!2d-52.34155696037564!3f279.2127889971415!4f-2.852265588070182!5f0.7820865974627469" width="450" height="450"></iframe>-->
+          </div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p><b>Todos os direitos reservados a Novaera Sul.</b></p>
+		</div>
+	</main>
+		<a href="#top" id="voltarTopo"><img src="Assets\Icon\Back _to_top_icon_.png" alt="Ícone Voltar ao Topo"></a>
+<script src="script.js"></script>
+</body>
+</html>

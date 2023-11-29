@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Assets\Icon\favicon_3.ico">
+  <title>Contato</title>
+  <style>
+     /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+	/* Estilos do Barra de Navegação */   
+    .navbar {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      z-index: 9999;
+      margin-right: 40px;
+	 /*background-color: #191970;*/  /*Cor solida*/
+	  background-image: linear-gradient(to bottom, rgba(25, 25, 112, 1), rgba(237, 237, 239, 0)); /*Cor Degrade*/
+    }
+      
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin-right: 30px;
+    }
+      
+    .logo_navbar {
+      width: 90px; 
+      height: 55px; /* se for logo com o nome abaixo do logo 90px se não 55px*/
+      margin-left: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin-right: 10px;
+	  margin-right: 20px;
+    }
+
+    .navbar li:last-child {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+	
+	.navbar a:hover {
+      color: #ff8c00; /* cor amarelada na seleção do item na barra de navegação*/
+    }
+	
+	/* Estilos do Container de Contato */ 
+    .contato-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .contato-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .contato-form img.logo {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    .contato-form input[type="text"],
+    .contato-form input[type="email"],
+    .contato-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    
+    .contato-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+	.contato-container {
+      margin-top: 70px;
+      padding: 20px;
+	 }
+	 
+	 /*.g-recaptcha{
+	 
+	 } */
+	 
+	/* Estilos do Nota de Roda Pé */ 
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: -15px;
+    }
+	
+  </style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html"><img src="Assets\Logo\logo_empresa_2.png" alt="Logo da Empresa" class="logo_navbar"></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Produtos.html">Produtos</a></li>
+			<!--<li><a href="cadastro.html">Cadastro</a></li>-->
+			<!--<li><a href="contato.html">Contato</a></li>-->
+			<!--<li><a href="login.html">Login</a></li>-->
+			<li><a href="sobre.html">Sobre</a></li>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/Novaerasuldistribuidora/"><img src="Assets\Icon\bar_icons_facebook_.png" alt="Ícone do Facebook"></a>
+				<a href="https://www.instagram.com/novaerasul/"><img src="Assets\Icon\bar_icons_instagram_.png" alt="Ícone do Instagram"></a>
+			</div>
+		</ul>
+	</div>
+  
+<main>
+	<div class="contato-container">
+	<div class="contato-form">
+    <h2>Contato</h2>
+    <img src="Assets\Logo\logo_empresa.png" alt="Logo da Empresa" class="logo">
+      <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+       <input type="submit" value="Enviar">
+      </form>
+	  </div>
+    </div>
+     <div class="footer">
+		<p><b>Todos os direitos reservados a Novaera Sul.</b></p>
+     </div>
+
+</body>
+</html>
